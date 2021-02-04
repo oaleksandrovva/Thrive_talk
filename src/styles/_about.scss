@@ -1,0 +1,25 @@
+.about {
+  min-height: 210px;
+  padding-top: 150px;
+
+  &__title {
+    float: left;
+    padding-left: 105px;
+  }
+
+  &__text {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .about {
+    padding-top: 50px;
+
+    &__title {
+      float: none;
+      padding-bottom: 10px;
+    }
+  }
+}

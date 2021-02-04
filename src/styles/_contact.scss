@@ -11,13 +11,14 @@
 
   &__list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
     gap: 4%;
   }
 
   &__item {
     width: 200px;
+    // margin-left: 20px;
   }
 
   &__title {
