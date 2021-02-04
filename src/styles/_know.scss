@@ -1,0 +1,58 @@
+.know {
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  background-color: $main-font-color;
+
+  &__photo {
+    height: 800px;
+    width: 33vw;
+    object-fit: cover;
+  }
+
+  &__block {
+    position: relative;
+    margin: 100px auto 42px;
+  }
+
+  &__text {
+    max-width: 675px;
+    padding-top: 225px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .know {
+    &__photo {
+      display: none;
+    }
+
+    &__text {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .know {
+    height: auto;
+    gap: 20px;
+
+    &__block {
+      margin: 25px auto 10px;
+    }
+
+    &__text {
+      padding-top: 50px;
+    }
+
+    &__photo {
+      height: auto;
+    }
+  }
+}

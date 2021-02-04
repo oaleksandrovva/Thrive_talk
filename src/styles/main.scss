@@ -1,7 +1,10 @@
 @import "utils";
 @import "fonts";
 @import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "./footer";
+@import "utils/reset";
+@import "./contact";
+@import "./article";
+@import "know";
+@import "./advantages";
+@import "./provide";

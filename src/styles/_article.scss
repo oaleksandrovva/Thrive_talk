@@ -1,0 +1,60 @@
+.article {
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  background-color: #22356f;
+
+  &__block {
+    position: relative;
+    margin: 100px auto 40px;
+  }
+
+  &__tagline {
+    padding: 230px 0 75px;
+  }
+
+  &__text {
+    max-width: 580px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__photo {
+    height: 800px;
+    width: 35vw;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .article {
+    &__photo {
+      display: none;
+    }
+
+    &__text {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .article {
+    height: auto;
+
+    &__block {
+      margin: 25px auto 10px;
+    }
+
+    &__tagline {
+      padding: 50px 0 20px;
+    }
+
+    &__photo {
+      height: auto;
+    }
+  }
+}

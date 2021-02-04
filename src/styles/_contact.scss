@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  min-height: 380px;
+  gap: 68px;
+
+  &__photo {
+    height: 380px;
+    width: 40vw;
+    object-fit: cover;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4%;
+  }
+
+  &__item {
+    width: 200px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .contact {
+    justify-content: center;
+    align-items: center;
+
+    &__photo {
+      display: none;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .contact {
+    height: auto;
+
+    &__list {
+      flex-direction: column;
+      margin: 10px auto;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}

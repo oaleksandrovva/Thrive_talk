@@ -1,0 +1,7 @@
+.provide {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, $provide-size);
+    height: $provide-size * 2;
+  }
+}
