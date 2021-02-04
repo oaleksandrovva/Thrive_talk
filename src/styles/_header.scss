@@ -1,7 +1,18 @@
 .header {
   height: 840px;
+  background-color: #f4f9e2;
+
+  &__top {
+    padding-top: 30px;
+  }
 
   &__info {
     margin: 170px 0 78px;
   }
 }
+
+// @media screen and (max-width: $small-screen) {
+//   .header {
+
+//   }
+// }

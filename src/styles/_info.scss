@@ -1,6 +1,17 @@
 .info {
-  // display: flex;
+  display: flex;
+  align-items: center;
+
   &__block {
     width: 480px;
+    margin-left: 179px;
+  }
+
+  &__content {
+    padding: 45px 0;
+  }
+
+  &__text {
+    padding-bottom: 60px;
   }
 }
