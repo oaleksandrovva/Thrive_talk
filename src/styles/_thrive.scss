@@ -1,0 +1,51 @@
+.thrive {
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  background-color: $main-color;
+
+  &__block {
+    margin: 0 auto;
+    padding: 150px 0 15px;
+  }
+
+  &__title {
+    margin-bottom: 75px;
+  }
+
+  &__text {
+    max-width: 555px;
+  }
+
+  &__photo {
+    height: 600px;
+    width: 36vw;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .thrive {
+    &__photo {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .thrive {
+    height: auto;
+
+    &__block {
+      padding: 35px 15px 15px;
+    }
+
+    &__title {
+      margin-bottom: 35px;
+    }
+
+    &__photo {
+      height: auto;
+    }
+  }
+}

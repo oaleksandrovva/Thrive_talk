@@ -28,6 +28,10 @@
 
 @media screen and (max-width: $phone-screen) {
   .know {
+    &__block {
+      padding: 0 15px;
+    }
+    
     &__photo {
       display: none;
     }

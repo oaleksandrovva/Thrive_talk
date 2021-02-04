@@ -31,6 +31,10 @@
 
 @media screen and (max-width: $phone-screen) {
   .article {
+    &__block {
+      padding: 0 15px;
+    }
+
     &__photo {
       display: none;
     }
