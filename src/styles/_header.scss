@@ -1,9 +1,11 @@
 .header {
+  width: 100vw;
   height: 840px;
-  background-color: #f4f9e2;
+  background: linear-gradient(to right, #f4f9e2 75%, #fff 25%);
+  overflow: hidden;
 
   &__top {
-    padding-top: 30px;
+    margin: 30px auto;
   }
 
   &__info {

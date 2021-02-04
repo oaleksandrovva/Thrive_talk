@@ -1,6 +1,7 @@
 .top {
   display: flex;
-  justify-content: space-around;
+  max-width: 1130px;
+  justify-content: space-between;
   align-items: center;
 
   &__button {
@@ -8,6 +9,7 @@
     background-color: $main-color;
     border: none;
     border-radius: 50px;
+    z-index: 1;
   }
 }
 
