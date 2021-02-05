@@ -12,8 +12,8 @@
   &__list {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     width: 60vw;
+    margin-top: 98px;
   }
 
   &__item {
@@ -22,6 +22,16 @@
 
   &__title {
     margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+
+  &__text,
+  &__routine {
+    font-size: 14px;
+    line-height: 23px;
+    color: $font-color;
   }
 }
 
@@ -55,7 +65,8 @@
 
     &__list {
       flex-direction: column;
-      margin: 10px auto;
+      margin: 0 auto;
+      padding: 15px 0;
     }
 
     &__title {

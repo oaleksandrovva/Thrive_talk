@@ -5,11 +5,16 @@
   &__title {
     float: left;
     margin-left: 105px;
+    line-height: 23px;
   }
 
   &__text {
     max-width: 590px;
     margin: 0 auto;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
   }
 }
 

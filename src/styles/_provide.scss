@@ -7,6 +7,9 @@
   &__item {
     height: 480px;
     padding: 95px 70px 10px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    // transition: transform 0.5s linear;
 
     &:first-child {
       background-color: $extra-font-color;
@@ -32,6 +35,19 @@
 
     &:last-child {
       background-color: #8f00ff;
+    }
+
+    &:hover {
+      border-radius: 10px;
+      transform: scale(1.02);
+    }
+  }
+
+  &__item:hover &__link {
+    color: $button-color;
+
+    &::after {
+      background-color: $button-color;
     }
   }
 }

@@ -15,9 +15,17 @@
     margin: 100px auto 42px;
   }
 
+  &__title {
+    line-height: 12px;
+  }
+
   &__text {
     max-width: 675px;
     padding-top: 225px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0.1px;
   }
 
   &__link {
@@ -49,6 +57,7 @@
 
     &__text {
       padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     &__photo {

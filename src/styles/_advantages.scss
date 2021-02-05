@@ -6,12 +6,16 @@
 
   &__title {
     padding: 55px 0 28px;
+    font-size: 28px;
+    line-height: 33px;
     text-align: center;
   }
 
   &__text {
     max-width: 300px;
     padding-bottom: 37px;
+    color: $font-color;
+    line-height: 25px;
   }
 }
 

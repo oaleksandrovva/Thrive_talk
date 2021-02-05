@@ -10,7 +10,8 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+button {
   margin: 0;
   padding: 0;
 }
@@ -22,7 +23,6 @@ li {
   list-style: none;
 }
 
-// img {
-//   height: 50px;
-//   width: 50px;
-// }
+a {
+  text-decoration: none;
+}

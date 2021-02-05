@@ -1,0 +1,79 @@
+.reference {
+  line-height: 23px;
+  color: $main-color;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.4s linear;
+
+  &--main {
+    padding: 15px 25px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $main-font-color;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  &--filled {
+    padding: 15px 35px;
+    color: $main-font-color;
+
+    &:hover {
+      color: $button-color;
+    }
+  }
+
+  &--yellow {
+    color: $button-color;
+
+    &:hover {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 33px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: $button-color;
+      }
+    }
+  }
+
+  &--sky:hover {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 33px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background-color: $main-color;
+    }
+  }
+
+  &--white {
+    position: relative;
+    font-weight: 400;
+    color: $main-font-color;
+
+    &:hover {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 33px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: $main-font-color;
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 .help {
   &__title {
     margin: 70px auto 24px;
+    line-height: 19px;
+    color: $font-color;
     text-align: center;
   }
 
@@ -13,6 +15,7 @@
   &__item {
     height: 360px;
     padding: 72px 52.5px 10px;
+    cursor: pointer;
 
     &:first-child {
       background-color: #ffe2de;
@@ -28,6 +31,19 @@
 
     &:last-child {
       background-color: #0052c1;
+    }
+
+    &:hover {
+      border-radius: 10px;
+      transform: scale(1.02);
+    }
+  }
+
+  &__item:hover &__link {
+    color: $button-color;
+
+    &::after {
+      background-color: $button-color;
     }
   }
 }

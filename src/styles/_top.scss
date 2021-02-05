@@ -3,11 +3,7 @@
   justify-content: space-around;
   align-items: center;
 
-  &__button {
-    padding: 19px 30px;
-    background-color: $main-color;
-    border: none;
-    border-radius: 50px;
+  &__title {
     z-index: 1;
   }
 }
