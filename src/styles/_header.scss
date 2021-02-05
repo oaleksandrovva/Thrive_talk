@@ -1,24 +1,30 @@
 .header {
   width: 100vw;
   height: 840px;
-  background: linear-gradient(to right, #f4f9e2 75%, #fff 25%);
+  background: linear-gradient(to right, #f4f9e2 75%, $main-font-color 25%);
   overflow: hidden;
 
   &__top {
-    margin: 30px auto;
+    margin: 0 auto;
+    padding-top: 30px;
   }
 
   &__info {
-    margin: 170px 0 78px;
+    margin: 170px auto 78px;
   }
 }
 
 @media screen and (max-width: $small-screen) {
   .header {
     height: auto;
+    background: $main-font-color;
+
+    &__top {
+      padding-bottom: 10px;
+    }
 
     &__info {
-      margin: 100px 0 40px;
+      margin: 50px 0 40px;
     }
   }
 }

@@ -31,10 +31,6 @@
 
 @media screen and (max-width: $phone-screen) {
   .article {
-    &__block {
-      padding: 0 15px;
-    }
-
     &__photo {
       display: none;
     }
@@ -50,7 +46,7 @@
     height: auto;
 
     &__block {
-      margin: 25px auto 10px;
+      margin: 25px $outer-size 20px;
     }
 
     &__tagline {
