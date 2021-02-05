@@ -13,8 +13,12 @@
   }
 }
 
-// @media screen and (max-width: $small-screen) {
-//   .header {
+@media screen and (max-width: $small-screen) {
+  .header {
+    height: auto;
 
-//   }
-// }
+    &__info {
+      margin: 100px 0 40px;
+    }
+  }
+}
