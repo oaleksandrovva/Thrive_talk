@@ -10,4 +10,10 @@
     line-height: 53px;
     letter-spacing: 1px;
   }
+
+  @media screen and (max-width: $phone-screen) {
+    &--large {
+      font-size: 32px;
+    }
+  }
 }

@@ -1,6 +1,5 @@
 .know {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   height: 800px;
   background-color: $main-font-color;
 
@@ -34,18 +33,6 @@
   }
 }
 
-@media screen and (max-width: $phone-screen) {
-  .know {
-    &__photo {
-      display: none;
-    }
-
-    &__text {
-      padding-bottom: 50px;
-    }
-  }
-}
-
 @media screen and (max-width: $small-screen) {
   .know {
     height: auto;
@@ -56,12 +43,32 @@
     }
 
     &__text {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding: 50px 0;
+      font-size: 34px;
+      line-height: 46px;
     }
 
     &__photo {
       height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .know {
+    flex-direction: column;
+
+    &__photo {
+      @include photo-small;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 26px;
+      padding-top: 30px;
     }
   }
 }

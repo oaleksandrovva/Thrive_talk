@@ -11,13 +11,8 @@
     transition: font-weight 0.2s linear;
 
     &:hover::after {
-      content: "";
-      display: block;
-      position: absolute;
+      @include line-bottom;
       top: 29px;
-      right: 0;
-      bottom: 0;
-      left: 0;
       height: 1px;
       background-color: $extra-font-color;
     }

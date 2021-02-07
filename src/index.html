@@ -7,41 +7,48 @@
     <link rel="stylesheet" href="styles/all.scss">
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="home">
       <header class="page__header header">
         <section class="header__top top">
           <h1 class="top__title word">ThriveTalk</h1>
           <nav class="nav">
+            <input
+              type="checkbox"
+              id="small-menu"
+              name="toggle"
+              class="nav__input"
+            >
             <ul class="nav__list">
               <li class="nav__item">
                 <a
-                  href="#"
+                  href="#home"
                   class="nav__link link link--top"
                 >
                   Home
                 </a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link link link--top">
+                <a href="#about" class="nav__link link link--top">
                   About
                 </a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link link link--top">
+                <a href="#services" class="nav__link link link--top">
                   Services
                 </a>
               </li>
               <li class="nav__item">
                 <a
-                  href="#" class="nav__link link link--top"
+                  href="#blog" class="nav__link link link--top"
                 >
                   Blog
                 </a>
               </li>
             </ul>
+            <label for="small-menu" class="nav__toggle"></label>
           </nav>
           <button class="button button--blue">
-            <a href="#" class="top__link reference reference--main">
+            <a href="#contact-us" class="top__link reference reference--main">
               Contact us
             </a>
           </button>
@@ -96,7 +103,7 @@
             class="thrive__photo"
           >
         </section>
-        <section class="main__about about">
+        <section class="main__about about" id="about">
           <h3 class="about__title title">
             About us
           </h3>
@@ -104,7 +111,7 @@
             We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help.  Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
           </p>
         </section>
-        <section class="main__help help">
+        <section class="main__help help" id="services">
           <h3 class="help__title title">
             We can help you with
           </h3>
@@ -134,16 +141,16 @@
             </li>
           </ul>
         </section>
-        <section class="main__provide provide">
+        <section class="main__provide provide" id="blog">
           <ul class="provide__list">
             <li class="provide__item">
               <a href="#" class="provide__link partition partition--large">
-                Physical<br>Health
+                Physical <br>Health
               </a>
             </li>
             <li class="provide__item">
               <a href="#" class="provide__link partition partition--large">
-                Mental<br>Health
+                Mental <br>Health
               </a>
             </li>
             <li class="provide__item">
@@ -245,7 +252,7 @@
         <section class="main__article article">
           <div class="article__block">
             <h3 class="article__title title">
-              <a href="#" class="reference reference--white">
+              <a href="#contact-us" class="reference reference--white">
                 Contact us
               </a>
             </h3>
@@ -265,7 +272,7 @@
           class="article__photo"
           >
         </section>
-        <section class="main__contact contact">
+        <section class="main__contact contact" id="contact-us">
           <img
             src="images/6.jpg"
             alt="Girl with smile"

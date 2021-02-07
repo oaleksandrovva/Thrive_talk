@@ -9,51 +9,37 @@
 
   &--small {
     &::before {
-      content: "";
-      position: absolute;
-      top: 11px;
-      left: -23px;
-      width: 9px;
-      height: 9px;
-      background-color: $button-color;
-      border-radius: 50%;
+      @include point-position;
+      width: $point-small;
+      height: $point-small;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      right: 0;
+      @include line-top;
       top: -15px;
       left: -23px;
-      height: 1px;
       width: 20vw;
-      background-color: $main-font-color;
     }
   }
 
   &--large {
     &::before {
-      content: "";
-      position: absolute;
-      top: 11px;
-      left: -28px;
-      width: 12px;
-      height: 12px;
-      background-color: $button-color;
-      border-radius: 50%;
+      @include point-position;
+      width: $point-large;
+      height: $point-large;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      right: 0;
+      @include line-top;
       top: -20px;
       left: -25px;
-      height: 1px;
       width: 26vw;
-      background-color: $main-font-color;
     }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .partition {
+    font-size: 26px;
   }
 }

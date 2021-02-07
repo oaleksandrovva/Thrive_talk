@@ -5,6 +5,14 @@
   cursor: pointer;
   transition: color 0.4s linear;
 
+  &:hover {
+    &::after {
+      @include line-bottom;
+      top: 33px;
+      height: 2px;
+    }
+  }
+
   &--main {
     padding: 15px 25px;
     font-size: 14px;
@@ -30,14 +38,6 @@
 
     &:hover {
       &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 33px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
         background-color: $button-color;
       }
     }
@@ -45,14 +45,6 @@
 
   &--sky:hover {
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 33px;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 2px;
       background-color: $main-color;
     }
   }
@@ -64,14 +56,6 @@
 
     &:hover {
       &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 33px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
         background-color: $main-font-color;
       }
     }

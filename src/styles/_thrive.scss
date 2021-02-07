@@ -1,6 +1,5 @@
 .thrive {
-  display: flex;
-  justify-content: space-between;
+  @include flex;
   height: 600px;
   color: $main-font-color;
   background-color: $main-color;
@@ -36,28 +35,44 @@
   }
 }
 
-@media screen and (max-width: $phone-screen) {
-  .thrive {
-    &__photo {
-      display: none;
-    }
-  }
-}
-
 @media screen and (max-width: $small-screen) {
   .thrive {
     height: auto;
 
     &__block {
-      padding: 35px $outer-size;
+      padding: 30px $outer-size;
     }
 
     &__title {
-      margin-bottom: 35px;
+      margin-bottom: 30px;
+      font-size: 34px;
     }
 
     &__photo {
       height: auto;
+      object-position: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .thrive {
+    flex-direction: column;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__paragraph {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__photo {
+      @include photo-small;
     }
   }
 }

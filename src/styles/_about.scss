@@ -22,7 +22,7 @@
   .about {
     display: flex;
     flex-direction: column;
-    padding: 50px $outer-size 0;
+    padding: 40px $outer-size 0;
 
     &__title {
       float: none;
@@ -31,7 +31,7 @@
     }
 
     &__text {
-      margin: 0 auto;
+      font-size: 18px;
     }
   }
 }
