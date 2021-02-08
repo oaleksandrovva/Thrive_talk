@@ -15,7 +15,7 @@
     }
 
     &:nth-child(2) {
-      background-color: #0052c1;
+      background-color: $sea-card;
     }
 
     &:nth-child(3) {
@@ -29,11 +29,11 @@
     }
 
     &:nth-child(5) {
-      background-color: #dee1ff;
+      background-color: $grey-card;
     }
 
     &:last-child {
-      background-color: #8f00ff;
+      background-color: $purple-card;
     }
 
     &:hover {

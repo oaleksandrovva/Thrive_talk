@@ -18,11 +18,11 @@
     cursor: pointer;
 
     &:first-child {
-      background-color: #ffe2de;
+      background-color: $pink-card;
     }
 
     &:nth-child(2) {
-      background-color: #c4e769;
+      background-color: $green-card;
     }
 
     &:nth-child(3) {
@@ -30,7 +30,7 @@
     }
 
     &:last-child {
-      background-color: #0052c1;
+      background-color: $sea-card;
     }
 
     &:hover {

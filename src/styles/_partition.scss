@@ -34,6 +34,23 @@
       top: -20px;
       left: -25px;
       width: 26vw;
+      margin: 0 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  .partition {
+    &--small {
+      &::after {
+        width: 320px;
+      }
+    }
+
+    &--large {
+      &::after {
+        width: 420px;
+      }
     }
   }
 }
@@ -41,5 +58,12 @@
 @media screen and (max-width: $small-screen) {
   .partition {
     font-size: 26px;
+
+    &--small,
+    &--large {
+      &:after {
+        max-width: 250px;
+      }
+    }
   }
 }
