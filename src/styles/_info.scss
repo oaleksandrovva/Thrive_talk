@@ -61,32 +61,6 @@
   }
 }
 
-@media screen and (min-width: $large-screen) {
-  .info {
-
-    &__images {
-      left: 0;
-    }
-
-    &__rectangle {
-      @include header-photo-large;
-      left: 80%;
-    }
-
-    &__image {
-      @include header-photo-large;
-      left: 75%;
-    }
-
-    &__photo {
-      width: 50vw;
-      height: 78vh;
-      object-fit: cover;
-      transform: none;
-    }
-  }
-}
-
 @media screen and (max-width: $small-screen) {
   .info {
     &__block {

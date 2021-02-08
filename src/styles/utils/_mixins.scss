@@ -11,7 +11,7 @@
 }
 
 @mixin photo-small {
-  width: 100vw;
+  max-width: 100vw;
   max-height: 250px;
 }
 

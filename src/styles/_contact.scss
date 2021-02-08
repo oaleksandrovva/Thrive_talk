@@ -4,7 +4,7 @@
   gap: 20px;
 
   &__photo {
-    width: 40vw;
+    max-width: 40vw;
     object-fit: cover;
   }
 
@@ -37,10 +37,6 @@
 @media screen and (max-width: $small-screen) {
   .contact {
     height: auto;
-
-    &__photo {
-      width: 50vw;
-    }
 
     &__list {
       flex-direction: column;

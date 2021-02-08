@@ -30,7 +30,7 @@
 
   &__photo {
     height: 600px;
-    width: 36vw;
+    max-width: 36vw;
     object-fit: cover;
   }
 }
