@@ -33,6 +33,11 @@
   .header {
     background: linear-gradient(to top, #f4f9e2 88%, $main-font-color 12%);
 
+    &__top,
+    &__info {
+      @include large-center;
+    }
+
     &__top {
       padding-top: 25px;
     }

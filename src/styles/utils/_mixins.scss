@@ -3,6 +3,11 @@
   justify-content: space-between;
 }
 
+@mixin large-center {
+  max-width: $large-screen;
+  margin: 0 auto;
+}
+
 @mixin rectangle {
   position: absolute;
   width: 805px;
